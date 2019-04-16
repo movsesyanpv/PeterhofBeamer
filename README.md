@@ -16,3 +16,5 @@
 ![Титульный слайд](./images/beamerTitle.png)
 
 ![Внутренний слайд](./images/beamerSlide.png)
+
+![Пример заметки](./images/beamerNotes.png)
