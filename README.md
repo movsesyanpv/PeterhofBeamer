@@ -5,7 +5,7 @@
 
 ## Сборка
 
-Для использования eps лого используйте
+Для использования eps лого собирайте следующим образом:
 
 `latex beamer.tex; dvips beamer.dvi; ps2pdf beamer.ps`
 
