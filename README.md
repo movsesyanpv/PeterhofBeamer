@@ -3,24 +3,28 @@
 Шаблон презентации Мат-Меха и не только. Используются цвета и логотип, вдохновленные одним местным вузом.
 Логотип вуза взят на [сайте](http://spbu.ru).
 
-## Сборка
+Beamer template with a theme inspired by a certain university located in Peterhof, Russia. University logo is used from [here](http://spbu.ru)
 
-Для использования eps лого собирайте следующим образом:
+## Сборка/Build
+
+Для использования eps лого собирайте следующим образом (for eps logo build like this):
 
 `latex beamer.tex; dvips beamer.dvi; ps2pdf beamer.ps`
 
 При сборке с `pdflatex` будет использоваться png лого
 
-## Скриншоты
+If you build with `pdflatex` png logo will be used
 
-### Титульный слайд
+## Скриншоты/Screenshots
+
+### Титульный слайд/Title page
 
 ![Титульный слайд](./images/beamerTitle.png)
 
-### Внутренний слайд
+### Внутренний слайд/Page example
 
 ![Внутренний слайд](./images/beamerSlide.png)
 
-### Пример заметки
+### Пример заметки/Notes example
 
 ![Пример заметки](./images/beamerNotes.png)
