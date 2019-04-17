@@ -1,13 +1,17 @@
-% \usefonttheme[onlylarge]{structurebold}
+% Copyright 2019 by Pavel Movsesyan <movsesyanpv@gmail.com>
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License and/or
+% 3. under the Unlicence
+%
+% See the file doc/licenses/LICENSE for more details.
 
-% \pgfdeclareimage[width=\paperwidth]{bgd}{zastavka_3x4_ru}
 \pgfdeclareimage[height=1.5cm]{university-logo}{univer-logo}
 \pgfdeclareimage[width=.2\paperwidth]{small-logo}{uni-logo}
 \pgfdeclareimage[width=.5\paperwidth]{large-logo}{uni-logo}
 
-%%%%%%%%%%%%%%%%%%%%%%%
-% Colours
-%%%%%%%%%%%%%%%%%%%%%%%
 \definecolor{MMURed}{RGB}{213,24,0}
 \definecolor{spbuTerr}{HTML}{9F2D20}
 \definecolor{spbuGray}{HTML}{A8ADB4}
@@ -15,8 +19,6 @@
   {1.5pt}{color(0cm)=(white); color(.5\textwidth)=(gray); color(\textwidth)=(white)}
 \pgfdeclarehorizontalshading{singleShade}
   {.5pt}{color(0cm)=(gray); color(.8\textwidth)=(gray); color(\textwidth)=(white)}
-%\pgfdeclarehorizontalshading{footShade}
-%  {.75pt}{color(0cm)=(gray); color(.8\textwidth)=(gray); color(\textwidth)=(white)}
 
 \setbeamercolor{item}{fg=spbuTerr}
 \setbeamercolor{title}{fg=spbuTerr}
@@ -35,43 +37,26 @@
 
 \usecolortheme[named=spbuTerr]{structure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-% Inner theme
-%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{pifont}
 \useinnertheme{rounded}
 \setbeamertemplate{section in toc}[sections numbered]
 \setbeamertemplate{subsection in toc}[subsections numbered]
 \setbeamertemplate{itemize items}[circle]
-% \setbeamertemplate{enumerate items}[default]
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-% Outer theme
-%%%%%%%%%%%%%%%%%%%%%%%%
-% \setbeamertemplate{background canvas}{\pgfuseimage{bgd}}
-% \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{frametitle}[default][left]
 
-\setbeamertemplate{headline}{%
-\vskip1pt\hskip2pt%
-\hspace*{23pt}\insertnavigation{.65\paperwidth}%
-\vskip2pt%\pgfuseshading{singleShade}\vskip1pt%
-\hfill\raisebox{-0.88\paperheight}[0pt][0pt]{\pgfuseimage{university-logo}\hskip10pt}%
+\setbeamertemplate{headline}{
+\vskip1pt\hskip2pt
+\hspace*{23pt}\insertnavigation{.65\paperwidth}
+\vskip2pt
+\hfill\raisebox{-0.88\paperheight}[0pt][0pt]{\pgfuseimage{university-logo}\hskip10pt}
 }
 
 \setbeamertemplate{section in head/foot}{\insertsectionhead\space}
 \setbeamertemplate{subsection in head/foot}{\guillemotright\space\insertsubsectionhead}
 
-\setbeamertemplate{footline}{%
-\pgfuseshading{singleShade}\vskip-10pt%
-\hskip5pt\insertshortauthor\hskip5pt{\usebeamercolor[fg]{separator}\textbullet}\hskip5pt \insertshorttitle%
+\setbeamertemplate{footline}{
+\pgfuseshading{singleShade}\vskip-10pt
+\hskip5pt\insertshortauthor\hskip5pt{\usebeamercolor[fg]{separator}\textbullet}\hskip5pt \insertshorttitle
 \logo{\pgfuseimage{university-logo}}
-% \hfill\raisebox{5pt}[0pt][0pt]{\pgfuseimage{TM}}\hskip5pt\pgfuseimage{MSC}\hspace*{5pt}\vskip1pt%
 }
-
-% \addtobeamertemplate{title page}{}{\vfil\centering%
-% % \addtobeamertemplate{title page}{\vskip20pt}{\vfil\centering%
-% % \pgfpathrectangle{\pgfpoint{0pt}{0pt}}{\pgfpoint{\textwidth}{-2pt}}
-% % \pgfuseshading{doubleShade}
-% % \vskip1pt\pgfuseimage{large-logo}\par}{}
-% \vskip1pt\pgfuseimage{large-logo}\par}{}
